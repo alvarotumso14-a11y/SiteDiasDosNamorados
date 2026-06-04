@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dia dos Namorados</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <audio id="musicaPrincipal" loop> 
+  <source src="Musicas/Não Quero Dinheiro.mp3" type="audio/mpeg">
+</audio>
+<section id = "inicio">
+  <h1>Feliz Dia dos Namorados!</h1>
+  <p>Uma pequena surpesa para você, meu amor!... Espero que voce goste,
+     fiz com muito carinho e amor para você, porque você merece tudo de melhor que a vida tem a oferecer,
+     e eu quero ser parte disso, quero estar ao seu lado em cada momento, 
+    compartilhando alegrias, superando desafios e construindo um futuro juntos.  </p>
+    <button onclick = "irHistoria()">Clique aqui para começar</button>
+
+</section>
+<section id="historia">
+  <div class="caixa-historia">
+    <h1>Nossa História ❤️</h1>
+    <h2>grande história começa de um jeito simples, e a nossa começou na escola.</h2> 
+
+<p>Entre aulas, corredores, conversas e olhares, fomos nos conhecendo aos poucos. Naquela época,<br><br>
+provavelmente nenhum de nós imaginava o quanto a vida do outro se tornaria importante.<br><br>
+O que começou como duas pessoas dividindo o mesmo ambiente acabou se transformando em algo muito maior.<br><br>
+No Dia dos Namorados, nossa história ganhou um novo capítulo. Foi nesse dia especial que decidimos começar a namorar, <br><br>
+transformando sentimentos em algo oficial e dando início a tudo o que vivemos juntos desde então.
+Pouco tempo depois vieram os primeiros momentos que guardamos com carinho.<br><br></p>
+<p>Nosso primeiro encontro foi no cinema, aquele tipo de momento simples que parece comum para quem vê de fora,<br><br>
+mas que para nós se tornou uma lembrança especial que carregamos até hoje.
+Também tivemos nossa primeira viagem juntos para a praia. Entre o som das ondas, os passeios e os momentos compartilhados,<br><br>
+criamos memórias que ficaram marcadas para sempre. Foi uma das primeiras vezes em que pudemos aproveitar apenas a companhia um do outro e perceber o quanto gostamos de estar juntos.
+Nem tudo foi fácil.</p><br><br>
+<p>Como toda história real, enfrentamos momentos difíceis. O mais doloroso foi quando nos separamos.<br><br>
+Foram dias complicados, cheios de sentimentos e dúvidas. Mas, mesmo depois de tudo, encontramos o caminho de volta um para o outro.<br><br>
+E foi justamente isso que nos mostrou a força do que construímos: mesmo quando a vida tentou nos afastar, nosso sentimento encontrou uma forma de nos reunir novamente.<br><br>
+Ao longo da nossa jornada, várias músicas fizeram parte da nossa história, mas uma delas sempre terá um significado especial:<br>
+"Não Quero Dinheiro", do Tim Maia. Porque, no fim das contas, ela representa exatamente o que sentimos: o que realmente importa nunca foram as coisas materiais, mas sim ter um ao outro.<br><br>
+Hoje, olhando para tudo o que já vivemos, percebemos que cada conversa, cada encontro, cada risada, cada desafio e cada reconciliação ajudaram a construir a nossa história.<br><br></p>
+<p>
+    E o melhor de tudo é que ela ainda está longe de terminar.<br><br>
+Nosso maior sonho é continuar escrevendo novos capítulos juntos, construindo um futuro lado a lado, compartilhando conquistas, enfrentando desafios e criando ainda mais memórias.<br><br>
+Porque, acima de tudo, o que mais queremos é continuar sendo nós.<br><br>
+</p>
+
+<h1>Com amor, hoje e sempre. ❤️</h1>
+</div>
+</section>
+<section id="galeria">
+      <h1>Nossas Memórias</h1>
+    <div class="foto">
+        
+        <img src="Fotos/fotos (24).jpg" alt="Foto 1">
+        <p>Nossa primeira vez na praia juntos</p>
+        <img src="Fotos/fotos (8).jpg" alt="Foto 2">
+        <p>Nosso encontro no cinema assistindo FNAF</p>
+        <img src="Fotos/fotos (2).jpg" alt="Foto 3">
+        <p>Um momento especial que guardamos com carinho minha Maglezinha</p>
+        <img src="Fotos/fotos (15).jpg" alt="Foto 4">
+        <p>Um dia de diversão e risadas juntos</p>
+        <img src="Fotos/fotos (11).jpg" alt="Foto 5">
+        <p>O momento em que percebi que você era a pessoa certa para mim</p>
+    </div>
+</section>
+<section id="musicas">
+  <div class="musicas">
+    
+<h2>Essa muscia vai sempre me fazer lembrar de você</h2>
+<div class="player">
+  <h2>On Melancholy Hill</h2>
+
+  <audio id = "musicaSecundaria">
+    <source src="Musicas/On Melancholy Hill .mp3" type = "audio/mpeg">
+  </audio>
+  <button onclick="playPause()"
+  id="btn">▶️</button>
+
+  </div>
+</section>
+<section id = "surpresa">
+  <h1>Uma Última Coisa</h1>
+  <p>Antes de terminar...</p>
+  <button onclick="MostrarCarta()">Clique Aqui
+  </button>
+  <div id="carta" style="display:none;">
+    <div id="foto">
+      <img src="Fotos/fotos (20).jpg" alt="Foto Especial">
+    </div>
+    <h2>Para o amor da minha vida ❤️</h2>
+   <p id = "textoDigitando"></p>
+  </div>
+</section>
+<button id = "voltarTopo" onclick="voltarAoTopo()">
+  ❤️
+</button>
+<p class="assinatura">
+  Com Amor<br>
+  Álvaro 💘
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script>
+
+function playPause(){
+
+  const principal =
+        document.getElementById("musicaPrincipal");
+
+    const audio =
+        document.getElementById("musicaSecundaria");
+
+    const btn =
+        document.getElementById("btn");
+
+    if(audio.paused){
+      principal.pause();
+      audio.currentTime = 0;
+      audio.play();
+      btn.innerHTML = "⏸";
+    }
+
+    else{
+
+      audio.pause();
+      principal.play();
+      btn.innerHTML = "▶";
+
+    
+
+    }
+  }
+document
+.getElementById("musicaSecundaria")
+.addEventListener("ended", function(){
+
+    document
+    .getElementById("musicaPrincipal")
+    .play();
+
+    document
+    .getElementById("btn")
+    .innerHTML = "▶";
+
+});
+
+function MostrarCarta() {
+ document.getElementById("carta").style.display ="block";
+ escreverTexto()
+}
+function irHistoria() {
+  document.getElementById("historia").scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('musicaPrincipal').play();
+}
+
+function voltarAoTopo()
+{
+  window.scrollTo({
+    top:0,
+    bahavior:"smooth"
+  });
+}
+
+const mensagem = `
+Eu te amo mais do que palavras podem expressar,
+
+e sou grato por cada momento que compartilhamos juntos.
+
+Você é a melhor coisa que já me aconteceu,
+
+e eu mal posso esperar para continuar construindo nossa história juntos.
+
+Feliz Dia dos Namorados, meu amor! ❤️
+
+E se eu pudesse escolher novamente,
+
+eu escolheria você todas as vezes. ❤️
+`;
+
+function escreverTexto()
+{
+  const texto = document.getElementById("textoDigitando");
+  texto.innerHTML = "";
+
+  let i = 0;
+  const efeito = setInterval(() =>
+  {
+    texto.innerHTML += mensagem.charAt(i);
+    i++
+    if(i >= mensagem.length)
+    {
+      clearInterval(efeito)
+    }
+  }, 70);
+}
+
+</script>
+
+
+</body>
+</html>

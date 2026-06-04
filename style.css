@@ -1,0 +1,299 @@
+body
+{
+    background-color: pink;
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)), url("Fotos/fundo.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     overflow-x: hidden;
+    
+    
+}
+h1
+{
+    color: rgb(255, 255, 255);
+  font-size: 60px;
+  text-align: center;
+   font-family: "Dancing Script", cursive;
+    font-size: 70px;
+
+}
+h2
+{
+    color: rgb(255, 255, 255);
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+       font-family: "Dancing Script", cursive;
+    font-size: 70px;
+
+}
+p
+{
+      color: rgb(255, 255, 255);
+  font-size: 40px;
+  text-align: center; 
+       font-family: Georgia, serif;
+
+}
+button
+{
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    background:#ff4f81;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+     font-family: "Pacifico", cursive;
+}
+button:hover
+{
+    transform: scale(1.1);
+}
+.galeria
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 30px;
+}
+.foto
+{
+background:rgba(255, 255, 255, 0.15);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+padding: 20px;
+border-radius: 30px;
+border: 1px solid rgba(255, 255, 255, 0.2);
+box-shadow: 0 8px 32px rgba (255, 255, 255, 0.2);
+}
+.foto img
+{
+width: 100%;
+border-radius: 35px;
+transition: 0.3s;
+}
+.foto:hover
+{
+    transition: 0.7s;
+    background:rgba(255, 255, 255, 0.25);
+}
+section
+{
+min-height: 100vh;
+padding: 50px;
+}
+.player
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 30px;
+    background:rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+.player button {
+    margin-top: 20px;
+}
+#carta
+{
+    margin-top: 30px;
+    padding: 40px;
+    width: 80%;
+    max-width: 900px;
+    background:rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+#foto img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+display: flex;
+justify-content: center;
+margin-bottom: 30px;
+}
+#foto
+{
+object-fit: cover;
+border-radius: 20px;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+#surpresa
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+   max-width: 900px;
+   padding: 40px;
+   border-radius: 30px;
+}
+#surpresa button
+{
+    margin-top: 20px;
+}
+button
+{
+   display:block;
+   margin: 20px auto;
+   padding:15px 40px;
+   border:none;
+   border-radius:30px;
+   cursor:pointer;
+}
+#carta
+{
+    text-align: center;
+  
+}
+
+.caixa-historia
+{
+   width: 80%;
+   max-width: 900px;
+   padding: 40px;
+   border-radius: 30px;
+   background:rgba(255, 255, 255, 0.15);
+   backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    margin: 50px auto;
+}
+#carta p
+{
+    font-size: 22px;
+    line-height: 1.8;
+    word-break: normal;
+}
+
+#voltarTopo{
+ position: fixed;
+
+    right: 15px;
+    bottom: 15px;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #ff4f8b;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    z-index: 9999;
+
+    box-shadow: 0 0 20px rgba(255,79,139,.7);
+
+    transition: all .3s ease;
+
+    animation: flutuar 2s ease-in-out infinite;
+}
+#voltarTopo:hover
+{
+    transform: scale(1.15);
+    box-shadow: 0 0 35px rgba(255,79, 139, 0.9);
+}
+#voltarTopo::before
+{
+    content:"";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 70px;
+    height: 70px;
+    inset: -5px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    filter: blur(10px);
+    animation: pulse 2s infinite;
+    overflow: visible;
+    z-index: -1;
+}
+
+.assinatura
+{
+    margin-top: 40px;
+    font-size: -32px;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes flutuar
+{
+0%
+{
+    transform:translateY(0px);
+}    
+50%
+{
+transform:translateY(-8px) ;
+}
+100%
+{
+    transform: translateY(0px);
+}
+}
+@keyframes pulse 
+{
+    0%
+    {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    100%
+    {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+@media (max-width: 768px) 
+{
+ #voltarTopo
+ {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    right: 10px;
+    bottom: 10px;
+ }   
+}
