@@ -1,5 +1,4 @@
 
-
 function tocarMusica(idMusica)
 {
     const musicas = document.querySelectorAll("audio");
@@ -59,4 +58,40 @@ function escreverTexto()
   }, 70);
 }
 
+function atualizarContador()
+{
+    const inicio = new Date("2023-06-12T00:00:00");
+    const agora = new Date();
 
+    let diferenca = agora - inicio;
+
+    const segundos = Math.floor(diferenca / 1000) % 60;
+    const minutos = Math.floor(diferenca / (1000 * 60)) % 60;
+    const horas = Math.floor(diferenca / (1000 * 60 * 60)) % 24;
+    const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+
+    document.getElementById("tempoJuntos").innerHTML =
+    `
+    ${dias} dias ❤️ <br>
+    ${horas} horas ❤️ <br>
+    ${minutos} minutos ❤️ <br>
+    ${segundos} segundos ❤️
+    `;
+}
+
+setInterval(atualizarContador, 1000);
+atualizarContador();
+
+
+function abrirMenu()
+{
+  const menu = document.getElementById("menu");
+  if(menu.style.display === "Flex")
+    {
+      menu.style.display = "none";
+    }
+    else
+      {
+        menu.style.display = "flex"
+      }
+}
